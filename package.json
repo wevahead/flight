@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "seed:dev": "nodemon ./server/db/seed.js"
+    "seed:dev": "nodemon ./server/db/seed.js",
+    "start": "node ./server/index.js",
+    "start:dev": "nodemon ./server/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "pg": "^8.3.0"
   },
   "devDependencies": {
